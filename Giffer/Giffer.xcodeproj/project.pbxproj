@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,6 +16,7 @@
 		08D1158C28FAC684003ED4CA /* GifferTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D1158B28FAC684003ED4CA /* GifferTests.swift */; };
 		08D1159628FAC684003ED4CA /* GifferUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D1159528FAC684003ED4CA /* GifferUITests.swift */; };
 		08D1159828FAC684003ED4CA /* GifferUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D1159728FAC684003ED4CA /* GifferUITestsLaunchTests.swift */; };
+		B2BE9944D326B673339D7CB9 /* Pods_Giffer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F904E27C40E17486C7CCF7A6 /* Pods_Giffer.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,9 @@
 		08D1159128FAC684003ED4CA /* GifferUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GifferUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		08D1159528FAC684003ED4CA /* GifferUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifferUITests.swift; sourceTree = "<group>"; };
 		08D1159728FAC684003ED4CA /* GifferUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifferUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9C414561CC99E907C9FEBAAF /* Pods-Giffer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Giffer.debug.xcconfig"; path = "Target Support Files/Pods-Giffer/Pods-Giffer.debug.xcconfig"; sourceTree = "<group>"; };
+		F904E27C40E17486C7CCF7A6 /* Pods_Giffer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Giffer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDBF6A738F10972AE332895E /* Pods-Giffer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Giffer.release.xcconfig"; path = "Target Support Files/Pods-Giffer/Pods-Giffer.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2BE9944D326B673339D7CB9 /* Pods_Giffer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +107,8 @@
 				08D1158A28FAC684003ED4CA /* GifferTests */,
 				08D1159428FAC684003ED4CA /* GifferUITests */,
 				08D1157228FAC683003ED4CA /* Products */,
+				749368D383C84F09ABAF5569 /* Pods */,
+				23CCAAA3FC67030520041EFD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -143,6 +150,24 @@
 			path = GifferUITests;
 			sourceTree = "<group>";
 		};
+		23CCAAA3FC67030520041EFD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F904E27C40E17486C7CCF7A6 /* Pods_Giffer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		749368D383C84F09ABAF5569 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9C414561CC99E907C9FEBAAF /* Pods-Giffer.debug.xcconfig */,
+				FDBF6A738F10972AE332895E /* Pods-Giffer.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -150,9 +175,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 08D1159B28FAC684003ED4CA /* Build configuration list for PBXNativeTarget "Giffer" */;
 			buildPhases = (
+				421A74E5A34BA670C96BE6E9 /* [CP] Check Pods Manifest.lock */,
 				08D1156D28FAC683003ED4CA /* Sources */,
 				08D1156E28FAC683003ED4CA /* Frameworks */,
 				08D1156F28FAC683003ED4CA /* Resources */,
+				32F9753CA825938A05028F12 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -223,7 +250,7 @@
 				};
 			};
 			buildConfigurationList = 08D1156C28FAC683003ED4CA /* Build configuration list for PBXProject "Giffer" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -268,6 +295,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		32F9753CA825938A05028F12 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Giffer/Pods-Giffer-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Giffer/Pods-Giffer-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Giffer/Pods-Giffer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		421A74E5A34BA670C96BE6E9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Giffer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		08D1156D28FAC683003ED4CA /* Sources */ = {
@@ -448,6 +517,7 @@
 		};
 		08D1159C28FAC684003ED4CA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C414561CC99E907C9FEBAAF /* Pods-Giffer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -475,6 +545,7 @@
 		};
 		08D1159D28FAC684003ED4CA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDBF6A738F10972AE332895E /* Pods-Giffer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
