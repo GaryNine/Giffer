@@ -7,15 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0832E25328FBFEE400819474 /* AssetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0832E25228FBFEE400819474 /* AssetModel.swift */; };
+		087F66BD28FCF81200A20225 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087F66BC28FCF81200A20225 /* NetworkManager.swift */; };
 		08D1157528FAC683003ED4CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D1157428FAC683003ED4CA /* AppDelegate.swift */; };
 		08D1157728FAC683003ED4CA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D1157628FAC683003ED4CA /* SceneDelegate.swift */; };
-		08D1157928FAC683003ED4CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D1157828FAC683003ED4CA /* ViewController.swift */; };
-		08D1157C28FAC683003ED4CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08D1157A28FAC683003ED4CA /* Main.storyboard */; };
+		08D1157928FAC683003ED4CA /* GiffViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D1157828FAC683003ED4CA /* GiffViewController.swift */; };
 		08D1157E28FAC684003ED4CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08D1157D28FAC684003ED4CA /* Assets.xcassets */; };
 		08D1158128FAC684003ED4CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08D1157F28FAC684003ED4CA /* LaunchScreen.storyboard */; };
 		08D1158C28FAC684003ED4CA /* GifferTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D1158B28FAC684003ED4CA /* GifferTests.swift */; };
 		08D1159628FAC684003ED4CA /* GifferUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D1159528FAC684003ED4CA /* GifferUITests.swift */; };
 		08D1159828FAC684003ED4CA /* GifferUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D1159728FAC684003ED4CA /* GifferUITestsLaunchTests.swift */; };
+		08DE071E28FC2C8100F48A56 /* GiffCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DE071D28FC2C8100F48A56 /* GiffCell.swift */; };
 		B2BE9944D326B673339D7CB9 /* Pods_Giffer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F904E27C40E17486C7CCF7A6 /* Pods_Giffer.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,11 +39,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0832E25228FBFEE400819474 /* AssetModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetModel.swift; sourceTree = "<group>"; };
+		087F66BC28FCF81200A20225 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		087F66BE28FD034000A20225 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		08D1157128FAC683003ED4CA /* Giffer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Giffer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		08D1157428FAC683003ED4CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		08D1157628FAC683003ED4CA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		08D1157828FAC683003ED4CA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		08D1157B28FAC683003ED4CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		08D1157828FAC683003ED4CA /* GiffViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiffViewController.swift; sourceTree = "<group>"; };
 		08D1157D28FAC684003ED4CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		08D1158028FAC684003ED4CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		08D1158228FAC684003ED4CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -50,6 +54,7 @@
 		08D1159128FAC684003ED4CA /* GifferUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GifferUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		08D1159528FAC684003ED4CA /* GifferUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifferUITests.swift; sourceTree = "<group>"; };
 		08D1159728FAC684003ED4CA /* GifferUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifferUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		08DE071D28FC2C8100F48A56 /* GiffCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiffCell.swift; sourceTree = "<group>"; };
 		9C414561CC99E907C9FEBAAF /* Pods-Giffer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Giffer.debug.xcconfig"; path = "Target Support Files/Pods-Giffer/Pods-Giffer.debug.xcconfig"; sourceTree = "<group>"; };
 		F904E27C40E17486C7CCF7A6 /* Pods_Giffer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Giffer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDBF6A738F10972AE332895E /* Pods-Giffer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Giffer.release.xcconfig"; path = "Target Support Files/Pods-Giffer/Pods-Giffer.release.xcconfig"; sourceTree = "<group>"; };
@@ -81,12 +86,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0832E24F28FB39BE00819474 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				08D1157828FAC683003ED4CA /* GiffViewController.swift */,
+				08DE071D28FC2C8100F48A56 /* GiffCell.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		0832E25028FB5D8C00819474 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				087F66BC28FCF81200A20225 /* NetworkManager.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		0832E25128FBFED900819474 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0832E25228FBFEE400819474 /* AssetModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		0884987428FAC7B100857F5D /* Sources */ = {
 			isa = PBXGroup;
 			children = (
 				08D1157428FAC683003ED4CA /* AppDelegate.swift */,
 				08D1157628FAC683003ED4CA /* SceneDelegate.swift */,
-				08D1157828FAC683003ED4CA /* ViewController.swift */,
+				0832E25028FB5D8C00819474 /* Networking */,
+				0832E25128FBFED900819474 /* Models */,
+				0832E24F28FB39BE00819474 /* Controllers */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -127,7 +159,6 @@
 			children = (
 				0884987428FAC7B100857F5D /* Sources */,
 				0884987528FAC7B600857F5D /* Resources */,
-				08D1157A28FAC683003ED4CA /* Main.storyboard */,
 				08D1158228FAC684003ED4CA /* Info.plist */,
 			);
 			path = Giffer;
@@ -153,6 +184,7 @@
 		23CCAAA3FC67030520041EFD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				087F66BE28FD034000A20225 /* Alamofire.framework */,
 				F904E27C40E17486C7CCF7A6 /* Pods_Giffer.framework */,
 			);
 			name = Frameworks;
@@ -164,7 +196,6 @@
 				9C414561CC99E907C9FEBAAF /* Pods-Giffer.debug.xcconfig */,
 				FDBF6A738F10972AE332895E /* Pods-Giffer.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -276,7 +307,6 @@
 			files = (
 				08D1158128FAC684003ED4CA /* LaunchScreen.storyboard in Resources */,
 				08D1157E28FAC684003ED4CA /* Assets.xcassets in Resources */,
-				08D1157C28FAC683003ED4CA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,7 +373,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				08D1157928FAC683003ED4CA /* ViewController.swift in Sources */,
+				087F66BD28FCF81200A20225 /* NetworkManager.swift in Sources */,
+				08D1157928FAC683003ED4CA /* GiffViewController.swift in Sources */,
+				08DE071E28FC2C8100F48A56 /* GiffCell.swift in Sources */,
+				0832E25328FBFEE400819474 /* AssetModel.swift in Sources */,
 				08D1157528FAC683003ED4CA /* AppDelegate.swift in Sources */,
 				08D1157728FAC683003ED4CA /* SceneDelegate.swift in Sources */,
 			);
@@ -382,14 +415,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		08D1157A28FAC683003ED4CA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				08D1157B28FAC683003ED4CA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		08D1157F28FAC684003ED4CA /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -527,7 +552,6 @@
 				INFOPLIST_FILE = Giffer/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -537,9 +561,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.garynine.Giffer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -555,7 +582,6 @@
 				INFOPLIST_FILE = Giffer/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -565,9 +591,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.garynine.Giffer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
