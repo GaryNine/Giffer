@@ -34,7 +34,7 @@ class NetworkManager: NetworkProtocol {
      func makeParamsWithSearchText(text: String) -> [String: String] {
         return ["tag" : text,
                 "key" : "LIVDSRZULELA",
-                "limit": "\(limit)"]
+                "limit" : "\(limit)"]
     }
     
      func paramString(parameters: [String: String]) -> String {
@@ -43,8 +43,9 @@ class NetworkManager: NetworkProtocol {
         return string.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? ""
     }
     
-     func fetchPopularGiffs(searchText: String?, callback: @escaping (Result<Response?, Error>) -> Void) {
-        let parameters = makeParamsWithSearchText(text: searchText!)
+    func fetchPopularGiffs(searchText: String?, callback: @escaping (Result<Response?, Error>) -> Void) {
+        guard let searchText = searchText else { return }
+        let parameters = makeParamsWithSearchText(text: searchText)
         let urlData = command + urlQuery + paramString(parameters: parameters)
         let url = URL(string: urlData, relativeTo: baseUrl!)
         guard let url = url else { return }
@@ -53,7 +54,6 @@ class NetworkManager: NetworkProtocol {
         URLSession.shared.dataTask(with: request) { data, response, error in
             if let error = error {
                 callback(.failure(error))
-                
                 return
             }
             do {

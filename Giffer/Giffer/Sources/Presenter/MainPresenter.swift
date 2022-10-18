@@ -28,7 +28,11 @@ class MainPresenter {
             guard let self = self else { return }
             switch result {
             case .success(let response):
-                let url = response!.results!.compactMap { $0.media![0].tinygif?.url }
+                let url = response!.results?.compactMap { $0.media?[0].tinygif?.url }
+                guard let url = url else {
+                    print("Fail with url!")
+                    return 
+                }
                 self.giffVC?.populateViewModelsWith(urls: url)
             case .failure(let error):
                 print("Fail with data: \(error)")
