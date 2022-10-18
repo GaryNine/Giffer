@@ -22,7 +22,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
         
-        let giffVC = GiffViewController()
+        let giffVC = AssemblyModuleBuilder().createMainModule()
         let navigationVC = UINavigationController(rootViewController: giffVC)
         
         window?.rootViewController = navigationVC

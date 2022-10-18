@@ -7,8 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0832E25328FBFEE400819474 /* AssetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0832E25228FBFEE400819474 /* AssetModel.swift */; };
+		0805E7A728FE7B1F00B32255 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0805E7A628FE7B1F00B32255 /* MainPresenter.swift */; };
+		0805E7AA28FE85AC00B32255 /* Layouts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0805E7A928FE85AC00B32255 /* Layouts.swift */; };
+		0805E7AD28FE88AC00B32255 /* Assembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0805E7AC28FE88AC00B32255 /* Assembly.swift */; };
+		08256B7D28FE59C400FD9EBA /* ResponseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08256B7C28FE59C400FD9EBA /* ResponseTests.swift */; };
+		08256B8028FE5B9500FD9EBA /* GIF.json in Resources */ = {isa = PBXBuildFile; fileRef = 08256B7F28FE5B9500FD9EBA /* GIF.json */; };
+		08256B8228FE5BA700FD9EBA /* GIFTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08256B8128FE5BA700FD9EBA /* GIFTests.swift */; };
+		0832E25328FBFEE400819474 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0832E25228FBFEE400819474 /* Response.swift */; };
 		087F66BD28FCF81200A20225 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087F66BC28FCF81200A20225 /* NetworkManager.swift */; };
+		08AD039A28FE54F800795CD9 /* NetworkManagerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AD039928FE54F800795CD9 /* NetworkManagerTest.swift */; };
+		08AD039B28FE56AE00795CD9 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087F66BC28FCF81200A20225 /* NetworkManager.swift */; };
+		08AD039E28FE595300795CD9 /* Response.json in Resources */ = {isa = PBXBuildFile; fileRef = 08AD039D28FE595300795CD9 /* Response.json */; };
+		08AFB35128FDF7A1002C6174 /* GiffViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AFB35028FDF7A1002C6174 /* GiffViewModel.swift */; };
 		08D1157528FAC683003ED4CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D1157428FAC683003ED4CA /* AppDelegate.swift */; };
 		08D1157728FAC683003ED4CA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D1157628FAC683003ED4CA /* SceneDelegate.swift */; };
 		08D1157928FAC683003ED4CA /* GiffViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D1157828FAC683003ED4CA /* GiffViewController.swift */; };
@@ -39,9 +49,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0832E25228FBFEE400819474 /* AssetModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetModel.swift; sourceTree = "<group>"; };
+		0805E7A628FE7B1F00B32255 /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
+		0805E7A928FE85AC00B32255 /* Layouts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layouts.swift; sourceTree = "<group>"; };
+		0805E7AC28FE88AC00B32255 /* Assembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assembly.swift; sourceTree = "<group>"; };
+		08256B7C28FE59C400FD9EBA /* ResponseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseTests.swift; sourceTree = "<group>"; };
+		08256B7F28FE5B9500FD9EBA /* GIF.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = GIF.json; sourceTree = "<group>"; };
+		08256B8128FE5BA700FD9EBA /* GIFTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFTests.swift; sourceTree = "<group>"; };
+		0832E25228FBFEE400819474 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 		087F66BC28FCF81200A20225 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		087F66BE28FD034000A20225 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		08AD039928FE54F800795CD9 /* NetworkManagerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerTest.swift; sourceTree = "<group>"; };
+		08AD039D28FE595300795CD9 /* Response.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Response.json; sourceTree = "<group>"; };
+		08AFB35028FDF7A1002C6174 /* GiffViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiffViewModel.swift; sourceTree = "<group>"; };
 		08D1157128FAC683003ED4CA /* Giffer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Giffer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		08D1157428FAC683003ED4CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		08D1157628FAC683003ED4CA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -86,13 +105,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0832E24F28FB39BE00819474 /* Controllers */ = {
+		0805E7A828FE7BA400B32255 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				0805E7A628FE7B1F00B32255 /* MainPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		0805E7AB28FE889D00B32255 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				0805E7AC28FE88AC00B32255 /* Assembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		0805E7AE28FE8C4700B32255 /* Layouts */ = {
+			isa = PBXGroup;
+			children = (
+				0805E7A928FE85AC00B32255 /* Layouts.swift */,
+			);
+			path = Layouts;
+			sourceTree = "<group>";
+		};
+		08256B7E28FE5B2800FD9EBA /* GIF */ = {
+			isa = PBXGroup;
+			children = (
+				08256B7F28FE5B9500FD9EBA /* GIF.json */,
+				08256B8128FE5BA700FD9EBA /* GIFTests.swift */,
+			);
+			path = GIF;
+			sourceTree = "<group>";
+		};
+		0832E24F28FB39BE00819474 /* UI */ = {
 			isa = PBXGroup;
 			children = (
 				08D1157828FAC683003ED4CA /* GiffViewController.swift */,
 				08DE071D28FC2C8100F48A56 /* GiffCell.swift */,
+				08AFB35028FDF7A1002C6174 /* GiffViewModel.swift */,
+				0805E7AE28FE8C4700B32255 /* Layouts */,
 			);
-			path = Controllers;
+			path = UI;
 			sourceTree = "<group>";
 		};
 		0832E25028FB5D8C00819474 /* Networking */ = {
@@ -106,7 +160,7 @@
 		0832E25128FBFED900819474 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				0832E25228FBFEE400819474 /* AssetModel.swift */,
+				0832E25228FBFEE400819474 /* Response.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -116,9 +170,11 @@
 			children = (
 				08D1157428FAC683003ED4CA /* AppDelegate.swift */,
 				08D1157628FAC683003ED4CA /* SceneDelegate.swift */,
+				0805E7AB28FE889D00B32255 /* Assembly */,
 				0832E25028FB5D8C00819474 /* Networking */,
+				0805E7A828FE7BA400B32255 /* Presenter */,
 				0832E25128FBFED900819474 /* Models */,
-				0832E24F28FB39BE00819474 /* Controllers */,
+				0832E24F28FB39BE00819474 /* UI */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -130,6 +186,23 @@
 				08D1157F28FAC684003ED4CA /* LaunchScreen.storyboard */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		08AD039828FE54BF00795CD9 /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				08AD039928FE54F800795CD9 /* NetworkManagerTest.swift */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		08AD039C28FE592E00795CD9 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				08AD039D28FE595300795CD9 /* Response.json */,
+				08256B7C28FE59C400FD9EBA /* ResponseTests.swift */,
+			);
+			path = Response;
 			sourceTree = "<group>";
 		};
 		08D1156828FAC683003ED4CA = {
@@ -168,6 +241,9 @@
 			isa = PBXGroup;
 			children = (
 				08D1158B28FAC684003ED4CA /* GifferTests.swift */,
+				08AD039828FE54BF00795CD9 /* NetworkManager */,
+				08AD039C28FE592E00795CD9 /* Response */,
+				08256B7E28FE5B2800FD9EBA /* GIF */,
 			);
 			path = GifferTests;
 			sourceTree = "<group>";
@@ -314,6 +390,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08256B8028FE5B9500FD9EBA /* GIF.json in Resources */,
+				08AD039E28FE595300795CD9 /* Response.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,10 +451,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08AFB35128FDF7A1002C6174 /* GiffViewModel.swift in Sources */,
+				0805E7AD28FE88AC00B32255 /* Assembly.swift in Sources */,
 				087F66BD28FCF81200A20225 /* NetworkManager.swift in Sources */,
 				08D1157928FAC683003ED4CA /* GiffViewController.swift in Sources */,
+				0805E7A728FE7B1F00B32255 /* MainPresenter.swift in Sources */,
 				08DE071E28FC2C8100F48A56 /* GiffCell.swift in Sources */,
-				0832E25328FBFEE400819474 /* AssetModel.swift in Sources */,
+				0832E25328FBFEE400819474 /* Response.swift in Sources */,
+				0805E7AA28FE85AC00B32255 /* Layouts.swift in Sources */,
 				08D1157528FAC683003ED4CA /* AppDelegate.swift in Sources */,
 				08D1157728FAC683003ED4CA /* SceneDelegate.swift in Sources */,
 			);
@@ -386,7 +468,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08256B7D28FE59C400FD9EBA /* ResponseTests.swift in Sources */,
+				08AD039B28FE56AE00795CD9 /* NetworkManager.swift in Sources */,
+				08AD039A28FE54F800795CD9 /* NetworkManagerTest.swift in Sources */,
 				08D1158C28FAC684003ED4CA /* GifferTests.swift in Sources */,
+				08256B8228FE5BA700FD9EBA /* GIFTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
