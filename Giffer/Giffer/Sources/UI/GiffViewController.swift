@@ -45,7 +45,7 @@ class GiffViewController: UIViewController {
     
     private func setupCollectionView() {
         view.backgroundColor = .white
-        collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: createCompositionalLayout())
+        collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: createCompositionalLayout(handler: self))
         collectionView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         collectionView.backgroundColor = .white
         
@@ -92,8 +92,11 @@ extension GiffViewController {
     }
     
     func populateViewModelsWith(urls: [URL]) {
-        self.verticalSectionModels = urls.map { GiffViewModel(url: $0) }
-        self.horizontalSectionModels = urls.map { GiffViewModel(url: $0) }
+        let verticalModels = urls.map { GiffViewModel(url: $0) }
+        self.verticalSectionModels.append(contentsOf: verticalModels)
+        let horizontalModels = urls.map { GiffViewModel(url: $0) }
+        self.horizontalSectionModels.append(contentsOf: horizontalModels)
+
         DispatchQueue.main.async {
             self.reloadData()
         }
@@ -107,5 +110,12 @@ extension GiffViewController: UISearchBarDelegate {
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         presenter.fetchGifsByText(text: searchText)
+    }
+}
+
+extension GiffViewController: SectionHandlerProtocol {
+    func handleSection() {
+        guard let text = navigationItem.searchController?.searchBar.text else { return }
+        presenter.fetchGifsByText(text: text, pagination: true)
     }
 }

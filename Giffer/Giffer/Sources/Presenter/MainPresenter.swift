@@ -23,8 +23,8 @@ class MainPresenter {
     // MARK: -
     // MARK: Public
     
-    func fetchGifsByText(text: String) {
-        networkService.fetchPopularGiffs(searchText: text) { [weak self] result in
+    func fetchGifsByText(text: String, pagination: Bool = false) {
+        networkService.fetchPopularGiffs(searchText: text, pagination: pagination) { [weak self] result in
             guard let self = self else { return }
             switch result {
             case .success(let response):

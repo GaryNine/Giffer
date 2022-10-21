@@ -7,21 +7,45 @@
 
 import UIKit
 
+protocol SectionHandlerProtocol {
+    func handleSection()
+}
+
 enum Section: Int, CaseIterable {
     case horizontalSection, verticalSection
 }
 
-func createCompositionalLayout() -> UICollectionViewLayout {
+func createCompositionalLayout(handler: SectionHandlerProtocol) -> UICollectionViewLayout {
     let layout = UICollectionViewCompositionalLayout { (sectionIndex, layoutEnvironment) -> NSCollectionLayoutSection in
         guard let section = Section(rawValue: sectionIndex) else {
             fatalError("Unknown kind of section")
         }
         switch section {
         case .verticalSection:
-            return creatVerticalSection(with: layoutEnvironment)
+            let verticalSection = creatVerticalSection(with: layoutEnvironment)
+            verticalSection.visibleItemsInvalidationHandler = { visibleItems, scrollOffset, layoutEnvironment in
+                let position = scrollOffset.y
+                guard let lastItem = visibleItems.last else { return }
+                let contentHeight = layoutEnvironment.container.contentSize.height
+                if position > (lastItem.frame.height * LayoutConstants.defaultItemsCount) - contentHeight {
+                    handler.handleSection()
+                }
+            }
+            
+            return verticalSection
             
         case .horizontalSection:
-            return createHorizontalSection(with: layoutEnvironment)
+            let horizontalSection = createHorizontalSection(with: layoutEnvironment)
+            horizontalSection.visibleItemsInvalidationHandler = { visibleItems, scrollOffset, layoutEnvironment in
+                let position = scrollOffset.x
+                guard let lastItem = visibleItems.last else { return }
+                let contentWidth = layoutEnvironment.container.contentSize.width
+                if position > (lastItem.frame.width * LayoutConstants.defaultItemsCount) - contentWidth {
+                    handler.handleSection()
+                }
+            }
+            
+            return horizontalSection
         }
     }
     
@@ -54,7 +78,7 @@ func creatVerticalSection(with environment: NSCollectionLayoutEnvironment) -> NS
                                                     leading: centerInset,
                                                     bottom: 0,
                                                     trailing: centerInset)
-    
+        
     return section
 }
 
@@ -63,6 +87,8 @@ func creatVerticalSection(with environment: NSCollectionLayoutEnvironment) -> NS
 // MARK: Constants
 
 struct LayoutConstants {
+    
+    static let defaultItemsCount: CGFloat = 7
     
     static let inset: CGFloat = 20
     static let sectionSpacing: CGFloat = 15
